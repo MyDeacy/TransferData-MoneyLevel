@@ -1,0 +1,2 @@
+# TransferData-MoneyLevel
+YAML保存版の旧MoneyLevelのデータを引越しできます。
