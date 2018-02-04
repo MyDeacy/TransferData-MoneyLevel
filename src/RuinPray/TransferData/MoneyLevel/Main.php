@@ -14,7 +14,6 @@ class Main extends PluginBase {
 		$path = $this->getDataFolder() . "old/level.yml";
 		if(file_exists($path)){
 			if(($plugin = $this->getServer()->getPluginManager()->getPlugin("MoneyLevel")) !== null){
-				var_dump($plugin->version);
 				if(isset($plugin->version) && preg_match("/RE-CREATE/", $plugin->version)){
 					$content = file_get_contents($path);
 					$data = preg_replace("#^([ ]*)([a-zA-Z_]{1}[ ]*)\\:$#m", "$1\"$2\":", $content);
